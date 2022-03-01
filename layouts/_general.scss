@@ -1,0 +1,49 @@
+//------------------General---------------------
+html {
+  font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Cream", sans-serif;
+  font-size: $font-sizes;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../assets/img/bulle.svg") no-repeat ;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+h2 {
+  font-size: $fontSizeHead2;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+h3 {
+    font-size: $fontSizeHead3;
+    text-align: left;
+    margin-left: 6rem;
+}
+
+p {
+  text-indent: 2rem;
+  text-align: justify;
+  line-height: 3rem;
+  padding: 2rem 6rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+//------------------Main---------------------
+.main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+}

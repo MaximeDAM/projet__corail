@@ -1,0 +1,24 @@
+//------------------Header ---------------------
+.header {
+  grid-area: header;
+  position: relative;
+  padding: 1.2rem 0 1.2rem 0;
+  background: url("../assets/img/aquarium.png") no-repeat;
+  background-size: cover;
+  &::after {
+    content: "";
+    @include absolute;
+    background-color: rgba($color: #000, $alpha: 0.9);
+    opacity: 0.3;
+    z-index: 20;
+  }
+  h1 {
+    position: relative;
+    background: url("../assets/img/waves.svg") text;
+    color: transparent;
+    margin: 2.4rem auto 0 auto;
+    text-align: center;
+    font-size: 18rem;
+    z-index: 22;
+  }
+}

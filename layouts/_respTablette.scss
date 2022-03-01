@@ -1,0 +1,67 @@
+//------------------Responsive Tablette-------------------
+
+@media (min-width: (map-get($breakpoints, mobile) + 1)) and (max-width: map-get($breakpoints, tablette)) {
+  //------------------General---------------------
+    * {
+    font-size: $font-sizes * 0.85;
+  }
+  h2 {
+    font-size: $fontSizeHead2 * 0.85;
+  }
+  h3 {
+    font-size: $fontSizeHead3 * 0.85;
+  }
+  //------------------Grid layout -----------------
+  //------------------Trigger menu --------------
+  //-------------------Menu-----------------------
+  //------------------Header ---------------------
+  .header h1 {
+    font-size: 15vw;
+  }
+  //------------------Article---------------------
+  .article {
+    width: 100%;
+     img[alt ="Tsunami"] {
+      display: none;
+    }
+  }
+  //------------------Aside---------------------
+  .aside {
+    width: 100%;
+    &__box {
+      @for $i from 1 through 7 {
+        #aside__box__trigger--#{$i} {
+          display: none;
+          &:checked ~ img {
+            display: block;
+            transform: scaleY(1);
+          }
+          &:checked + .aside__box__label > .aside__box__arrow {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      &__arrow {
+        transform: rotate(-90deg);
+      }
+    }
+    img {
+      display: none;
+      transform: scaleY(0);
+    }
+  }
+  //------------------Footer ---------------------
+  .footer {
+    h2 {
+      font-size: $fontSizeHead2 * 0.75;
+    }
+    ul {
+      padding: 0 1.4rem 0 1.4rem;
+    }
+    li {
+      font-size: $font-sizes * 0.75;
+    }
+  }
+}
+
+

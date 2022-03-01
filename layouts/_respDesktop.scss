@@ -1,0 +1,28 @@
+//------------------Responsive Desktop----------------
+@media (min-width: (map-get($breakpoints, tabletteL) + 1)) and (max-width: map-get($breakpoints, desktop)) {
+  //------------------General---------------------
+  * {
+    font-size: $font-sizes * 0.9;
+  }
+  h2 {
+    font-size: $fontSizeHead2 * 0.9;
+  }
+  h3 {
+    font-size: $fontSizeHead3 * 0.9;
+  }
+  //------------------Grid layout -----------------
+  //------------------Trigger menu --------------
+  //-------------------Menu-----------------------
+  //------------------Header ---------------------
+  .header h1 {
+    font-size: 15vw;
+  }
+  //------------------Article----------------------
+  .article {
+  img[alt ="Tsunami"] {
+      display: none;
+    }
+  }
+  //------------------Aside-----------------------
+  //------------------Footer ---------------------
+}

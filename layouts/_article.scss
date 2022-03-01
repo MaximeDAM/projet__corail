@@ -1,0 +1,17 @@
+//------------------Article---------------------
+.article {
+  color: $colorArticle;
+  text-align: center;
+  width: 65%;
+  background-color: $backgroundColorArticle;
+  img {
+    width: auto;
+    max-height: 30rem;
+    /* border: 0.1rem solid black; */
+    margin: 2rem 0 4rem 0;
+  }
+  #menaces ~ img {
+    height: auto;
+    max-width: 100%;
+  }
+}

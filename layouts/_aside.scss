@@ -1,0 +1,78 @@
+//------------------Aside---------------------
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: center;
+  color: $colorAside;
+  grid-area: aside;
+  background-color: $backgroundColorAside;
+  &__box {
+    position: relative;
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+    @for $i from 1 through 7 {
+      #aside__box__trigger--#{$i} {
+        display: none;
+        &:checked ~ img {
+          display: none;
+          transform-origin: top center;
+          transform: scaleY(0);
+          transition: transform 0.4s;
+        }
+        &:checked + .aside__box__label > .aside__box__arrow {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    &__label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: $colorHover;
+        & > .aside__box__arrow {
+          border-color: $colorHover transparent transparent transparent;
+        }
+      }
+      &--circleH3 {
+        display: inline-block;
+        text-align: center;
+        line-height: 2.2rem;
+        background-color: $borderColor;
+        color: #3b3b3b;
+        border: 0.2rem solid $colorMenu;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        margin-right: 0.8rem;
+      }
+    }
+    &__arrow {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      transform: rotate(45 deg);
+      border-style: solid;
+      border-radius: 0.3rem;
+      border-width: 1rem 0.8rem 0 0.8rem;
+      border-color: $colorArrow transparent transparent transparent;
+    }
+  }
+  h3 {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+  }
+  img {
+    display: block;
+    transform-origin: top center;
+    transform: scaleY(1);
+    transition: transform 0.4s;
+    height: 15rem;
+    /* border: 0.1rem solid $borderColorImg; */
+    margin: 0 auto 5rem auto;
+  }
+}

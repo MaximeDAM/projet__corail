@@ -1,0 +1,77 @@
+//------------------Responsive---------------------
+@media (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+  .header h1 {
+    font-size: 15vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+  * {
+    font-size: $fontSizeNormal * 0.95;
+  }
+  h2 {
+    font-size: $fontSizeHead2 * 0.8;
+  }
+  h3 {
+    font-size: $fontSizeHead3 * 0.9;
+  }
+  .article {
+    width: 60%;
+  }
+  .aside {
+    width: 40%;
+  &__box {
+    @for $i from 1 through 7 {
+      #aside__box__trigger--#{$i} {
+        display: none;
+        &:checked ~ img {
+            display: block;
+          transform: scaleY(1);
+        }
+        &:checked + .aside__box__label > .aside__box__arrow {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    &__arrow {
+      transform: rotate(-90deg);
+    }
+}
+    h3 {
+      font-size: $fontSizeHead3;
+    }
+    img {
+      display: none;
+      transform: scaleY(0);
+    }
+  }
+
+  .header h1 {
+    font-size: 15vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+  * {
+    font-size: $fontSizeNormal * 0.95;
+  }
+  .header h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: $fontSizeHead2 * 0.95;
+  }
+  h3 {
+    font-size: $fontSizeHead3 * 0.95;
+  }
+  .aside h3 {
+    font-size: $fontSizeHead3 * 0.95;
+  }
+}

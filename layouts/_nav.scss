@@ -1,0 +1,49 @@
+//------------------Trigger menu ---------------------
+#grid_container__trigger {
+  display: none;
+  &:checked + .grid_container__btn > .animBurger {
+    left: -0.4rem;
+    top: 1.2rem;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+  &:checked + .grid_container__btn > .animBurger::before {
+    opacity: 0;
+  }
+  &:checked + .grid_container__btn > .animBurger::after {
+    left: -0.1rem;
+    top: -0.1rem;
+    transform: rotate(90deg);
+    transition: transform 0.5s;
+  }
+  &:checked ~ .grid_container__menu {
+    transform: scaleY(1);
+  }
+}
+
+//-------------------Menu Burger----------------------
+.grid_container__menu {
+  position: fixed;
+  top: 0;
+  background-color: $backgroundColorMenu;
+  transform-origin: top center;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  margin: 0;
+  padding: 3.5rem 4rem 0 4rem;
+  z-index: 24;
+  & li,
+  a {
+    text-indent: 0;
+    margin: 1.5rem 0 1.5rem 0;
+    font-weight: 700;
+    font-size: $font-sizes;
+    color: $colorMenu;
+    text-decoration: none;
+    outline: 0;
+    list-style: none;
+  }
+  a:hover {
+    color: $colorHover;
+  }
+}
