@@ -71,9 +71,8 @@ a {
 }
 .grid_container__btn--burger {
   position: absolute;
-  background-color: #fff;
+  background-color: #ACEFB4;
   border-radius: 1rem;
-  border: 0.1rem solid #ACEFB4;
   width: 4rem;
   height: 0.6rem;
   z-index: 11;
@@ -82,25 +81,21 @@ a {
   content: "";
   display: block;
   position: absolute;
-  background-color: #fff;
+  background-color: #ACEFB4;
   border-radius: 1rem;
-  border: 0.1rem solid #ACEFB4;
   width: 4rem;
   height: 0.6rem;
   top: 1rem;
-  left: -0.1rem;
 }
 .grid_container__btn--burger::after {
   content: "";
   display: block;
   position: absolute;
-  background-color: #fff;
+  background-color: #ACEFB4;
   border-radius: 1rem;
-  border: 0.1rem solid #ACEFB4;
   width: 4rem;
   height: 0.6rem;
-  top: 2.2rem;
-  left: -0.1rem;
+  top: 2rem;
 }
 
 .header {
@@ -125,7 +120,9 @@ a {
 }
 .header h1 {
   position: relative;
-  background: url("../assets/img/waves.svg") text;
+  background: url("../assets/img/waves.svg") no-repeat center;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   margin: 2.4rem auto 0 auto;
   text-align: center;
@@ -150,8 +147,8 @@ a {
   opacity: 0;
 }
 #grid_container__trigger:checked + .grid_container__btn > .animBurger::after {
-  left: -0.1rem;
-  top: -0.1rem;
+  left: 0rem;
+  top: 0rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: -webkit-transform 0.5s;
@@ -200,6 +197,10 @@ a {
   text-align: center;
   width: 65%;
   background-color: #333333;
+}
+.article h3 {
+  font-size: 2.4rem;
+  margin-top: 3rem;
 }
 .article img {
   width: auto;
@@ -380,7 +381,7 @@ a {
   display: inline-block;
   text-align: center;
   line-height: 2.2rem;
-  background-color: #fff;
+  background-color: #ACEFB4;
   color: #3b3b3b;
   border: 0.2rem solid #ACEFB4;
   width: 2rem;

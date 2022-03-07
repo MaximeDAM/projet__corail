@@ -11,8 +11,8 @@
     opacity: 0;
   }
   &:checked + .grid_container__btn > .animBurger::after {
-    left: -0.1rem;
-    top: -0.1rem;
+    left: 0rem;
+    top: 0rem;
     transform: rotate(90deg);
     transition: transform 0.5s;
   }

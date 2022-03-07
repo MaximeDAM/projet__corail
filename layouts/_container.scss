@@ -21,7 +21,6 @@
       position: absolute;
       background-color: $borderColor;
       border-radius: 1rem;
-      border: 0.1rem solid $colorMenu;
       width: 4rem;
       height: 0.6rem;
       z-index: 11;
@@ -31,11 +30,9 @@
         position: absolute;
         background-color: $borderColor;
         border-radius: 1rem;
-        border: 0.1rem solid $colorMenu;
         width: 4rem;
         height: 0.6rem;
         top: 1rem;
-        left: -0.1rem;
       }
       &::after {
         content: "";
@@ -43,11 +40,9 @@
         position: absolute;
         background-color: $borderColor;
         border-radius: 1rem;
-        border: 0.1rem solid $colorMenu;
         width: 4rem;
         height: 0.6rem;
-        top: 2.2rem;
-        left: -0.1rem;
+        top: 2rem;
       }
     }
   }

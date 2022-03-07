@@ -14,7 +14,8 @@
   }
   h1 {
     position: relative;
-    background: url("../assets/img/waves.svg") text;
+    background: url("../assets/img/waves.svg") no-repeat center;
+    background-clip: text;
     color: transparent;
     margin: 2.4rem auto 0 auto;
     text-align: center;

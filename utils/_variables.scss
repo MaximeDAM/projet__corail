@@ -3,7 +3,7 @@
 //------------------General---------------------
 $colorMenu: #ACEFB4;
 $colorHover: #74B3B7;
-$borderColor: #fff;
+$borderColor: #ACEFB4;
 $size: 2rem;
 $font-size: (
   normal: $size,
@@ -12,7 +12,7 @@ $font-size: (
 $font-sizes: map-get($font-size, normal);
 $fontSizeHead2: map-get($font-size, big);
 $fontSizeHead3: $font-sizes;
-
+$fontSizeH3Article: $font-sizes * 1.2;
 //------------------Menu Burger---------------------
 $backgroundColorMenu: rgba(#000, 70%);
 //------------------Header---------------------

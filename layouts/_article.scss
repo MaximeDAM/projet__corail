@@ -4,6 +4,10 @@
   text-align: center;
   width: 65%;
   background-color: $backgroundColorArticle;
+  h3{
+    font-size: $fontSizeH3Article;
+    margin-top: 3rem;
+  }
   img {
     width: auto;
     max-height: 30rem;
